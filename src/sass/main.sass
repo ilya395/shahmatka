@@ -1,0 +1,278 @@
+
+*
+	box-sizing: border-box
+
+html
+	margin: 0
+
+@font-face
+	font-family: IBMPlexSans
+	src: url(../fonts/IBMPlexSans/IBMPlexSans-Bold.ttf)
+	font-weight: 600
+@font-face
+	font-family: IBMPlexSans
+	src: url(../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf)
+	font-weight: normal
+
+@font-face
+	font-family: 'GothamPro'
+	src: url(../fonts/GothamPro/GothamPro-Light.ttf)
+	font-weight: 200
+@font-face
+	font-family: 'GothamPro'
+	src: url(../fonts/GothamPro/GothamPro-Medium.ttf)
+	font-weight: normal
+@font-face
+	font-family: 'GothamPro'
+	src: url(../fonts/GothamPro/GothamPro-Medium.ttf)
+	font-weight: bold
+
+.main-container
+	background-color: #fff
+	width: 1080px
+	margin: 0 auto
+
+.shahmatka-block_placement
+	width: 100%
+	margin:
+		top: 80px
+.shahmatka-block__list_placement
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		left: -15px
+		right: -15px
+.shahmatka-block__item_placement
+	padding:
+		left: 15px
+		right: 15px
+	flex-basis: 33.33333%
+	flex-grow: 0
+	flex-shrink: 1
+	margin:
+		bottom: 80px
+
+.shahmatka-item
+	border: solid 0.5px #4f98f7
+.shahmatka-item_placement
+	width: 100%
+	height: 100%
+	padding: 24px 28px//12px 14px
+	display: block
+	flex-wrap: nowrap
+	flex-direction: column
+
+.shahmatka-item__title
+	font-family: 'GothamPro'
+	font-size: 30px//17px
+	font-weight: 200
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: #4f98f7
+.shahmatka-item__title_placement
+	margin:
+		bottom: 32px //16px
+.shahmatka-item__title_bold-writing
+	font-weight: normal
+
+.shahmatka-item__plan-info-row_placement
+	display: flex
+	flex-wrap: nowrap
+	margin:
+		bottom: 22px //11px
+.shahmatka-item__plan-info-block
+	font-family: GothamPro
+	font-size: 24px//12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #514d47
+.shahmatka-item__plan-info-block_placement
+	display: flex
+	flex-wrap: nowrap
+.plan-info-block__square
+	text-align: left
+	flex-basis: 50%
+	flex-grow: 0
+	flex-shrink: 1
+.plan-info-block__square-wrap
+
+.plan-info-block__floor
+	text-align: right
+	flex-basis: 50%
+	flex-grow: 0
+	flex-shrink: 1
+.plan-info-block__floor-wrap
+	margin:
+		left: auto
+		right: 0
+
+.shahmatka-item__plan-image
+	margin:
+		bottom: 24px //12px
+	width: 100%
+	height: 67%
+	max-height: 80vh
+	//flex-grow: 1
+	//flex-shrink: 1
+	//flex-basis: auto
+	display: flex
+	justify-content: center
+	align-items: center
+.shahmatka-item__plan-img
+	width: 100%
+	height: auto
+	margin: auto 0
+
+.shahmatka-item__plan-price-row_placement
+	display: flex
+	flex-wrap: nowrap
+	flex-direction: column
+.shahmatka-item__plan-price-block_after
+	font-family: 'GothamPro'
+	font-size: 20px //10px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: #999999
+	text-decoration: line-through
+.shahmatka-item__plan-price-block_before
+	font-family: 'GothamPro'
+	font-size: 29px //14.5px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: #000000
+.shahmatka-item__plan-price-block_placement
+	text-align: center
+	margin:
+		bottom: 16px //8px
+
+.shahmatka-item__btn
+	background-color: #4f98f7
+	font-family: 'GothamPro'
+	font-size: 24px //12px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: #ffffff
+.shahmatka-item__btn_placement
+	display: block
+	text-align: center
+	width: 100%
+	padding: 10px 20px
+.shahmatka-item__btn_hovered
+	&:hover, &:focus
+		cursor: pointer
+		background-color: #83b5f7
+
+
+/*
+ * @media
+ */
+//@media (max-width: 320px)
+
+//@media (min-width: 320px)
+
+@media (min-width: 320px) //468
+	.main-container
+		width: auto
+
+	.shahmatka-block__list_placement
+		flex-wrap: wrap
+		margin:
+			left: 0px
+			right: 0px
+	.shahmatka-block__item_placement
+		flex-basis: 100%
+
+	.shahmatka-item_placement
+		padding: 12px 14px
+	.shahmatka-item__title
+		font-size: 17px
+	.shahmatka-item__title_placement
+		margin:
+			bottom: 16px
+	.shahmatka-item__plan-info-row_placement
+		margin:
+			bottom: 11px
+	.shahmatka-item__plan-info-block
+		font-size: 12px
+	.shahmatka-item__plan-image
+		margin:
+			bottom: 12px
+		width: 100%
+		height: auto
+		max-height: 100vh
+	.shahmatka-item__plan-img
+		width: 100%
+		height: auto
+	.shahmatka-item__plan-price-block_after
+		font-size: 10px
+	.shahmatka-item__plan-price-block_before
+		font-size: 14.5px
+	.shahmatka-item__plan-price-block_placement
+		margin:
+			bottom: 8px
+	.shahmatka-item__btn
+		font-size: 12px
+
+@media (min-width: 577px)
+	.main-container
+		width: 1080px
+
+	.shahmatka-block_placement
+
+	.shahmatka-block__list_placement
+		flex-wrap: nowrap
+		margin:
+			left: -15px
+			right: -15px
+	.shahmatka-block__item_placement
+		flex-basis: 33.33333%
+
+	.shahmatka-item_placement
+		padding: 24px 28px
+	.shahmatka-item__title
+		font-size: 30px
+	.shahmatka-item__title_placement
+		margin:
+			bottom: 32px
+	.shahmatka-item__plan-info-row_placement
+		margin:
+			bottom: 22px
+	.shahmatka-item__plan-info-block
+		font-size: 24px
+	.shahmatka-item__plan-image
+		margin:
+			bottom: 24px
+		width: 100%
+		height: 67%
+		max-height: 800px
+	.shahmatka-item__plan-img
+		width: 100%
+		height: auto
+	.shahmatka-item__plan-price-block_after
+		font-size: 20px
+	.shahmatka-item__plan-price-block_before
+		font-size: 29px
+	.shahmatka-item__plan-price-block_placement
+		margin:
+			bottom: 16px
+	.shahmatka-item__btn
+		font-size: 24px
+
